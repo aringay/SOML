@@ -1,1 +1,1 @@
-https://rawgithack.com/aringay/SOML/main/index.html
+https://raw.githack.com/aringay/SOML/main/index.html
