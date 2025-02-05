@@ -1,0 +1,98 @@
+/* General Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header with Gradient Text Logo */
+header {
+    padding: 20px;
+    background-color: #111;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #bbb, #fff, #bbb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+/* General Button Styling (For All Pages) */
+.btn, .fav-btn, .about-btn, .sub-btn, .others-btn, .about-sub-btn, .others-sub-btn, .home-btn {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #eee;
+    padding: 12px 25px;
+    border-radius: 8px;
+    background: linear-gradient(to right, #444, #666);
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    border: 1px solid #666;
+}
+
+.btn:hover, .fav-btn:hover, .about-btn:hover, .sub-btn:hover, .others-btn:hover, .about-sub-btn:hover, .others-sub-btn:hover, .home-btn:hover {
+    background: linear-gradient(to right, #bbb, #fff);
+    color: #222;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 0.3);
+}
+
+/* Layout for Sub Buttons */
+.favorites-grid, .about-grid, .others-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Sub Buttons (inside each section) */
+.sub-btn, .about-sub-btn, .others-sub-btn {
+    width: 200px;
+    margin: 10px;
+}
+
+/* Navigation Buttons on Other Pages */
+.nav-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .btn, .fav-btn, .about-btn, .sub-btn, .others-btn, .about-sub-btn, .others-sub-btn, .home-btn {
+        display: block;
+        width: 80%;
+        margin: 10px auto;
+    }
+}
